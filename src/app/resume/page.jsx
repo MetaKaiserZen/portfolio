@@ -14,7 +14,7 @@ const ResumePage = () =>
     return (
         <Container>
             <Grid container>
-                <Grid size={{ xs: 12, sm: 12, md: 4, lg: 3 }} style={{ backgroundColor: 'blue' }}>
+                <Grid size={{ xs: 12, sm: 12, md: 4, lg: 3 }}>
                     <Profile />
                 </Grid>
                 <Grid size="grow" style={{ backgroundColor: 'red' }}>
