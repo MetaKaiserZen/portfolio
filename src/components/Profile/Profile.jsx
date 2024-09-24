@@ -3,8 +3,10 @@ import { Typography } from '@mui/material';
 import { TimelineItem, TimelineContent } from '@mui/lab';
 
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
+import GetAppIcon from '@mui/icons-material/GetApp';
 
 import CustomTimeline, { CustomTimelineSeparator } from '@/components/Timeline/Timeline';
+import CustomButton from '@/components/Button/Button';
 
 import '@/components/Profile/Profile.css';
 
@@ -66,8 +68,10 @@ const Profile = () =>
                     }
 
                 </CustomTimeline>
-                <br />
-                <button>my Button</button>
+
+                <div className="button_container">
+                    <CustomButton text="Download Cv" icon={<GetAppIcon />} />
+                </div>
             </div>
         </div>
     );
