@@ -5,7 +5,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 export default
 {
-    name: 'Sam is coding',
+    name: 'Salman Fazal',
     title: 'Full stack developer',
 
     birthday: '06th December 1999',

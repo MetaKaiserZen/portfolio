@@ -1,0 +1,25 @@
+.footer
+{
+    background-color: #1E1E1E;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70px;
+    border-radius: 8px;
+    padding: 20px 25px;
+}
+
+.footer .footer_copyright
+{
+    font-size: small;
+    text-align: end;
+    color: #9C9C9C;
+}
+
+.footer .footer_copyright > a
+{
+    text-decoration: none !important;
+    color: var(--main-color);
+}
