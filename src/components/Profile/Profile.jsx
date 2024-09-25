@@ -61,9 +61,9 @@ const Profile = () =>
                     <CustomTimelineItem title="Email" text={data.email} />
 
                     {
-                        Object.keys(data.socials).map((key) =>
+                        Object.keys(data.socials).map((key, index) =>
                         (
-                            <CustomTimelineItem title={key} text={data.socials[key].text} link={data.socials[key].link} />
+                            <CustomTimelineItem key={index} title={key} text={data.socials[key].text} link={data.socials[key].link} />
                         ))
                     }
 

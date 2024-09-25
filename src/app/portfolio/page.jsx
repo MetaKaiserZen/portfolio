@@ -12,12 +12,12 @@ import Footer from '@/components/Footer/Footer';
 const PortfolioPage = () =>
 {
     return (
-        <Container>
-            <Grid container>
+        <Container className="top_60">
+            <Grid container spacing={7}>
                 <Grid size={{ xs: 12, sm: 12, md: 4, lg: 3 }}>
                     <Profile />
                 </Grid>
-                <Grid size="grow" style={{ backgroundColor: 'red' }}>
+                <Grid size="grow">
                     <Header />
                     <div>
                         Portfolio page

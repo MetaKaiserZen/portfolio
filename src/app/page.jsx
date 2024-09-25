@@ -17,7 +17,7 @@ const HomePage = () =>
                 <Grid size={{ xs: 12, sm: 12, md: 4, lg: 3 }}>
                     <Profile />
                 </Grid>
-                <Grid size="grow" style={{ backgroundColor: 'red' }}>
+                <Grid size="grow">
                     <Header />
                     <div>
                         Resume Page
