@@ -16,9 +16,9 @@ const PortfolioPage = () =>
                 </Grid>
                 <Grid size="grow">
                     <Header />
-                    <div>
-                        Portfolio page
-                    </div>
+                        <div className="main_content container_shadow">
+                            Portfolio page
+                        </div>
                     <Footer />
                 </Grid>
             </Grid>

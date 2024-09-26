@@ -4,6 +4,7 @@ import Grid from '@mui/material/Grid2';
 
 import Profile from '@/components/Profile/Profile';
 import Header from '@/components/Header/Header';
+import Resume from '@/components/Resume/Resume';
 import Footer from '@/components/Footer/Footer';
 
 const HomePage = () =>
@@ -16,9 +17,9 @@ const HomePage = () =>
                 </Grid>
                 <Grid size="grow">
                     <Header />
-                    <div>
-                        Resume Page
-                    </div>
+                        <div className="main_content container_shadow">
+                            <Resume />
+                        </div>
                     <Footer />
                 </Grid>
             </Grid>
