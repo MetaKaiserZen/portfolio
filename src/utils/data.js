@@ -1,7 +1,12 @@
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import
+{
+    Facebook,
+    Twitter,
+    LinkedIn,
+    GitHub,
+    WebOutlined,
+    AssignmentOutlined
+} from '@mui/icons-material';
 
 export default
 {
@@ -19,25 +24,25 @@ export default
         {
             link: 'https://www.facebook.com',
             text: 'SamIsCoding',
-            icon: <FacebookIcon />
+            icon: <Facebook />
         },
         Twitter:
         {
             link: 'https://www.facebook.com',
             text: 'MyTwitter',
-            icon: <TwitterIcon />
+            icon: <Twitter />
         },
         LinkedIn:
         {
             link: 'https://www.facebook.com',
             text: 'MyLinkedIn',
-            icon: <LinkedInIcon />
+            icon: <LinkedIn />
         },
         GitHub:
         {
             link: 'https://www.facebook.com',
             text: 'MyGithub',
-            icon: <GitHubIcon />
+            icon: <GitHub />
         }
     },
 
@@ -78,6 +83,69 @@ export default
             title: 'Education 3',
             date: 'Aug 2016 - Sept 2018',
             description: 'Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.'
+        }
+    ],
+
+    services:
+    [
+        {
+            title: 'Web Development',
+            description: 'I have been working on web design for 10 years.',
+            icon: <WebOutlined />
+        },
+        {
+            title: 'Branding Identity',
+            description: 'We will make you a brand that is catchy and leaves a trace.',
+            icon: <AssignmentOutlined />
+        },
+        {
+            title: 'Illustrator',
+            description: 'I have been working on illustration design for 6 years.',
+            icon: <WebOutlined />
+        }
+    ],
+    
+    skills:
+    [
+        {
+            title: 'FRONT-END',
+            description:
+            [
+                'ReactJS',
+                'JavaScript',
+                'TypeScript',
+                'Bootstrap',
+                'Material UI'
+            ]
+        },
+        {
+            title: 'BACK-END',
+            description:
+            [
+                'NodeJS',
+                'Java',
+                'Python',
+                'Solidity'
+            ]
+        },
+        {
+            title: 'DATABASES',
+            description:
+            [
+                'Firebase',
+                'Ms SQL Server',
+                'MySQL',
+                'MongoDB'
+            ]
+        },
+        {
+            title: 'SOURCE CONTROL',
+            description:
+            [
+                'Git',
+                'GitHub',
+                'SCRUM/Agile'
+            ]
         }
     ]
 }

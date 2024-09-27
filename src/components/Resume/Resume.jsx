@@ -2,9 +2,19 @@
 
 import Grid from '@mui/material/Grid2';
 
-import { Typography } from '@mui/material';
+import
+{
+    Typography,
+    Icon,
+    Paper
+} from '@mui/material';
 
-import { TimelineItem, TimelineContent } from '@mui/lab';
+import
+{
+    TimelineItem,
+    TimelineContent,
+    TimelineDot
+} from '@mui/lab';
 
 import { Work, School } from '@mui/icons-material';
 
@@ -19,7 +29,7 @@ const Resume = () =>
     return (
         <>
             {/* About me */}
-            <Grid container className="section pb_45">
+            <Grid container className="section pb_45 pt_45">
                 <Grid className="section_title mb_30">
                     <span></span>
                     <h6 className="section_title_text">About Me</h6>
@@ -30,7 +40,7 @@ const Resume = () =>
             </Grid>
 
             {/* Education an experiences */}
-            <Grid container className="">
+            <Grid container className="section pb_45">
                 <Grid className="section_title mb_30">
                     <span></span>
                     <h6 className="section_title_text">Resume</h6>
@@ -82,13 +92,63 @@ const Resume = () =>
             </Grid>
 
             {/* Services */}
-            <Grid container className=""></Grid>
+            <Grid container className="section pb_45">
+                <Grid className="section_title mb_30">
+                    <span></span>
+                    <h6 className="section_title_text">My Services</h6>
+                </Grid>
+
+                <Grid container spacing={3} justifyContent="space-around">
+
+                    {
+                        data.services.map((service, index) =>
+                        (
+                            <Grid key={index} size={{ xs: 12, sm: 6, md: 3 }}>
+                                <div className="service">
+                                    <Icon className="service_icon" style={{ width: 'auto', height: 'auto' }}>{service.icon}</Icon>
+                                    <Typography className="service_title" variant="h6">{service.title}</Typography>
+                                    <Typography className="service_description" variant="body2">{service.description}</Typography>
+                                </div>
+                            </Grid>
+                        ))
+                    }
+
+                </Grid>
+            </Grid>
 
             {/* Skills */}
-            <Grid container className=""></Grid>
+            <Grid justifyContent="space-around" className="section graybg pb_45 p_50">
+                <Grid container spacing={3}>
+
+                    {
+                        data.skills.map((skill, index) =>
+                        (
+                            <Grid key={index} size={{ xs: 12, sm: 6, lg: 3 }}>
+                                <Paper elevation={0} className="skill">
+                                    <Typography variant="h6" className="skill_title">
+                                        {skill.title}
+                                    </Typography>
+
+                                    {
+                                        skill.description.map((element, index) =>
+                                        (
+                                            <Typography key={index} variant="body2" className="skill_description">
+                                                <TimelineDot variant="outlined" className="timeline_dot" />
+                                                {element}
+                                            </Typography>
+                                        ))
+                                    }
+
+                                </Paper>
+                            </Grid>
+                        ))
+                    }
+
+                </Grid>
+            </Grid>
 
             {/* Contact */}
-            <Grid container className=""></Grid>
+            <Grid container className="section"></Grid>
         </>
     );
 }
