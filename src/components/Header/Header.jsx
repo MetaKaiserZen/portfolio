@@ -47,6 +47,9 @@ const Header = () =>
 
                     {/* Portfolio Link */}
                     <Nav.Link as={Link} href="/portfolio" className={ pathname == '/portfolio' ? 'header_link_active' : 'header_link' }>Portfolio</Nav.Link>
+
+                    {/* Portfolio Link */}
+                    <Nav.Link as={Link} href="/contact" className={ pathname == '/contact' ? 'header_link_active' : 'header_link' }>Contact</Nav.Link>
                 </Nav>
 
                 <div className="header_right">

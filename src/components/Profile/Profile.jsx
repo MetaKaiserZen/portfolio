@@ -23,7 +23,7 @@ const CustomTimelineItem = ({ title, text, link }) =>
                     link ?
                     (
                         <Typography className="timelineItem_text">
-                            <span style={{ fontWeight: 600 }}>{title}:</span>{' '}
+                            <span>{title}:</span>{' '}
                             <a href={link} target="_blank">
                                 {text}
                             </a>
@@ -31,7 +31,7 @@ const CustomTimelineItem = ({ title, text, link }) =>
                     ) :
                     (
                         <Typography className="timelineItem_text">
-                            <span style={{ fontWeight: 600 }}>{title}:</span> {text}
+                            <span>{title}:</span>{' '}{text}
                         </Typography>
                     )
                 }

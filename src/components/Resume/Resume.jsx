@@ -46,49 +46,51 @@ const Resume = () =>
                     <h6 className="section_title_text">Resume</h6>
                 </Grid>
 
-                <Grid container className="resume_timeline">
-                    {/* Experiences */}
-                    <Grid size={{ sm: 12, md: 6 }}>
-                        <CustomTimeline title="Work Experience" icon={<Work />}>
+                <>
+                    <Grid container className="resume_timeline">
+                        {/* Experiences */}
+                        <Grid size={{ sm: 12, md: 6 }}>
+                            <CustomTimeline title="Work Experience" icon={<Work />}>
 
-                            {
-                                data.experiences.map((experience, index) =>
-                                (
-                                    <TimelineItem key={index}>
-                                        <CustomTimelineSeparator />
-                                        <TimelineContent className="timeline_content">
-                                            <Typography className="timeline_title">{experience.title}</Typography>
-                                            <Typography variant="caption" className="timeline_date">{experience.date}</Typography>
-                                            <Typography variant="body2" className="timeline_description">{experience.description}</Typography>
-                                        </TimelineContent>
-                                    </TimelineItem>
-                                ))
-                            }
+                                {
+                                    data.experiences.map((experience, index) =>
+                                    (
+                                        <TimelineItem key={index}>
+                                            <CustomTimelineSeparator />
+                                            <TimelineContent className="timeline_content">
+                                                <Typography className="timeline_title">{experience.title}</Typography>
+                                                <Typography variant="caption" className="timeline_date">{experience.date}</Typography>
+                                                <Typography variant="body2" className="timeline_description">{experience.description}</Typography>
+                                            </TimelineContent>
+                                        </TimelineItem>
+                                    ))
+                                }
 
-                        </CustomTimeline>
+                            </CustomTimeline>
+                        </Grid>
+
+                        {/* Education */}
+                        <Grid size={{ sm: 12, md: 6 }}>
+                            <CustomTimeline title="Education" icon={<School />}>
+
+                                {
+                                    data.education.map((education, index) =>
+                                    (
+                                        <TimelineItem key={index}>
+                                            <CustomTimelineSeparator />
+                                            <TimelineContent className="timeline_content">
+                                                <Typography className="timeline_title">{education.title}</Typography>
+                                                <Typography variant="caption" className="timeline_date">{education.date}</Typography>
+                                                <Typography variant="body2" className="timeline_description">{education.description}</Typography>
+                                            </TimelineContent>
+                                        </TimelineItem>
+                                    ))
+                                }
+
+                            </CustomTimeline>
+                        </Grid>
                     </Grid>
-
-                    {/* Education */}
-                    <Grid size={{ sm: 12, md: 6 }}>
-                        <CustomTimeline title="Education" icon={<School />}>
-
-                            {
-                                data.education.map((education, index) =>
-                                (
-                                    <TimelineItem key={index}>
-                                        <CustomTimelineSeparator />
-                                        <TimelineContent className="timeline_content">
-                                            <Typography className="timeline_title">{education.title}</Typography>
-                                            <Typography variant="caption" className="timeline_date">{education.date}</Typography>
-                                            <Typography variant="body2" className="timeline_description">{education.description}</Typography>
-                                        </TimelineContent>
-                                    </TimelineItem>
-                                ))
-                            }
-
-                        </CustomTimeline>
-                    </Grid>
-                </Grid>
+                </>
             </Grid>
 
             {/* Services */}
@@ -98,22 +100,24 @@ const Resume = () =>
                     <h6 className="section_title_text">My Services</h6>
                 </Grid>
 
-                <Grid container spacing={3} justifyContent="space-around">
+                <>
+                    <Grid container spacing={3} justifyContent="space-around">
 
-                    {
-                        data.services.map((service, index) =>
-                        (
-                            <Grid key={index} size={{ xs: 12, sm: 6, md: 3 }}>
-                                <div className="service">
-                                    <Icon className="service_icon" style={{ width: 'auto', height: 'auto' }}>{service.icon}</Icon>
-                                    <Typography className="service_title" variant="h6">{service.title}</Typography>
-                                    <Typography className="service_description" variant="body2">{service.description}</Typography>
-                                </div>
-                            </Grid>
-                        ))
-                    }
+                        {
+                            data.services.map((service, index) =>
+                            (
+                                <Grid key={index} size={{ xs: 12, sm: 6, md: 3 }}>
+                                    <div className="service">
+                                        <Icon className="service_icon" style={{ width: 'auto', height: 'auto' }}>{service.icon}</Icon>
+                                        <Typography className="service_title" variant="h6">{service.title}</Typography>
+                                        <Typography className="service_description" variant="body2">{service.description}</Typography>
+                                    </div>
+                                </Grid>
+                            ))
+                        }
 
-                </Grid>
+                    </Grid>
+                </>
             </Grid>
 
             {/* Skills */}
@@ -146,9 +150,6 @@ const Resume = () =>
 
                 </Grid>
             </Grid>
-
-            {/* Contact */}
-            <Grid container className="section"></Grid>
         </>
     );
 }
