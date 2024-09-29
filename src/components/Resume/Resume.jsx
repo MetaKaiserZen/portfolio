@@ -1,9 +1,8 @@
 'use client';
 
-import Grid from '@mui/material/Grid2';
-
 import
 {
+    Grid2,
     Typography,
     Icon,
     Paper
@@ -29,27 +28,27 @@ const Resume = () =>
     return (
         <>
             {/* About me */}
-            <Grid container className="section pb_45 pt_45">
-                <Grid className="section_title mb_30">
+            <Grid2 container className="section pb_45 pt_45">
+                <Grid2 className="section_title mb_30">
                     <span></span>
                     <h6 className="section_title_text">About Me</h6>
-                </Grid>
-                <Grid size={12}>
+                </Grid2>
+                <Grid2 size={12}>
                     <Typography variant="body2" className="aboutme_text">{data.about}</Typography>
-                </Grid>
-            </Grid>
+                </Grid2>
+            </Grid2>
 
             {/* Education an experiences */}
-            <Grid container className="section pb_45">
-                <Grid className="section_title mb_30">
+            <Grid2 container className="section pb_45">
+                <Grid2 className="section_title mb_30">
                     <span></span>
                     <h6 className="section_title_text">Resume</h6>
-                </Grid>
+                </Grid2>
 
                 <>
-                    <Grid container className="resume_timeline">
+                    <Grid2 container className="resume_timeline">
                         {/* Experiences */}
-                        <Grid size={{ sm: 12, md: 6 }}>
+                        <Grid2 size={{ sm: 12, md: 6 }}>
                             <CustomTimeline title="Work Experience" icon={<Work />}>
 
                                 {
@@ -67,10 +66,10 @@ const Resume = () =>
                                 }
 
                             </CustomTimeline>
-                        </Grid>
+                        </Grid2>
 
                         {/* Education */}
-                        <Grid size={{ sm: 12, md: 6 }}>
+                        <Grid2 size={{ sm: 12, md: 6 }}>
                             <CustomTimeline title="Education" icon={<School />}>
 
                                 {
@@ -88,46 +87,46 @@ const Resume = () =>
                                 }
 
                             </CustomTimeline>
-                        </Grid>
-                    </Grid>
+                        </Grid2>
+                    </Grid2>
                 </>
-            </Grid>
+            </Grid2>
 
             {/* Services */}
-            <Grid container className="section pb_45">
-                <Grid className="section_title mb_30">
+            <Grid2 container className="section pb_45">
+                <Grid2 className="section_title mb_30">
                     <span></span>
                     <h6 className="section_title_text">My Services</h6>
-                </Grid>
+                </Grid2>
 
                 <>
-                    <Grid container spacing={3} justifyContent="space-around">
+                    <Grid2 container spacing={3} justifyContent="space-around">
 
                         {
                             data.services.map((service, index) =>
                             (
-                                <Grid key={index} size={{ xs: 12, sm: 6, md: 3 }}>
+                                <Grid2 key={index} size={{ xs: 12, sm: 6, md: 3 }}>
                                     <div className="service">
                                         <Icon className="service_icon" style={{ width: 'auto', height: 'auto' }}>{service.icon}</Icon>
                                         <Typography className="service_title" variant="h6">{service.title}</Typography>
                                         <Typography className="service_description" variant="body2">{service.description}</Typography>
                                     </div>
-                                </Grid>
+                                </Grid2>
                             ))
                         }
 
-                    </Grid>
+                    </Grid2>
                 </>
-            </Grid>
+            </Grid2>
 
             {/* Skills */}
-            <Grid justifyContent="space-around" className="section graybg pb_45 p_50">
-                <Grid container spacing={3}>
+            <Grid2 justifyContent="space-around" className="section graybg pb_45 p_50">
+                <Grid2 container spacing={3}>
 
                     {
                         data.skills.map((skill, index) =>
                         (
-                            <Grid key={index} size={{ xs: 12, sm: 6, lg: 3 }}>
+                            <Grid2 key={index} size={{ xs: 12, sm: 6, lg: 3 }}>
                                 <Paper elevation={0} className="skill">
                                     <Typography variant="h6" className="skill_title">
                                         {skill.title}
@@ -144,12 +143,12 @@ const Resume = () =>
                                     }
 
                                 </Paper>
-                            </Grid>
+                            </Grid2>
                         ))
                     }
 
-                </Grid>
-            </Grid>
+                </Grid2>
+            </Grid2>
         </>
     );
 }

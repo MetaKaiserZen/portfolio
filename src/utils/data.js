@@ -5,7 +5,9 @@ import
     LinkedIn,
     GitHub,
     WebOutlined,
-    AssignmentOutlined
+    AssignmentOutlined,
+    YouTube,
+    Language
 } from '@mui/icons-material';
 
 export default
@@ -145,6 +147,98 @@ export default
                 'Git',
                 'GitHub',
                 'SCRUM/Agile'
+            ]
+        }
+    ],
+
+    projects:
+    [
+        {
+            tag: 'React',
+            image: 'https://img.freepik.com/vector-gratis/fondo-degradado-lineas-azules-dinamicas_23-2148995756.jpg',
+            title: 'React Project 1',
+            caption: 'A short description',
+            description: 'This is my proyect description. Please fill it in.',
+            links:
+            [
+                {
+                    link: 'https://www.google.com',
+                    icon: <YouTube />
+                },
+                {
+                    link: 'https://www.google.com',
+                    icon: <GitHub />
+                },
+                {
+                    link: 'https://www.google.com',
+                    icon: <Language />
+                }
+            ]
+        },
+        {
+            tag: 'React',
+            image: 'https://img.freepik.com/vector-gratis/fondo-degradado-lineas-azules-dinamicas_23-2148995756.jpg',
+            title: 'React Project 2',
+            caption: 'A short description',
+            description: 'This is my proyect description. Please fill it in.',
+            links:
+            [
+                {
+                    link: 'https://www.google.com',
+                    icon: <YouTube />
+                },
+                {
+                    link: 'https://www.google.com',
+                    icon: <GitHub />
+                },
+                {
+                    link: 'https://www.google.com',
+                    icon: <Language />
+                }
+            ]
+        },
+        {
+            tag: 'Python',
+            image: 'https://img.freepik.com/vector-gratis/fondo-degradado-lineas-azules-dinamicas_23-2148995756.jpg',
+            title: 'Python Project 1',
+            caption: 'A short description',
+            description: 'This is my proyect description. Please fill it in.',
+            links:
+            [
+                {
+                    link: 'https://www.google.com',
+                    icon: <YouTube />
+                },
+                {
+                    link: 'https://www.google.com',
+                    icon: <GitHub />
+                },
+                {
+                    link: 'https://www.google.com',
+                    icon: <Language />
+                }
+            ]
+        },
+        {
+            tag: 'Java',
+            image: 'https://img.freepik.com/vector-gratis/fondo-degradado-lineas-azules-dinamicas_23-2148995756.jpg',
+            title: 'Java Project 1',
+            caption: 'A short description',
+            description: 'This is my proyect description. Please fill it in.',
+            links:
+            [
+                {
+                    link: 'https://www.google.com',
+                    icon: <YouTube />
+                },
+                {
+                    link: 'https://www.google.com',
+                    icon: <GitHub />
+                },
+                {
+                    link: 'https://www.google.com',
+                    icon: <Language />
+                }
             ]
         }
     ]

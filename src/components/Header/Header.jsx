@@ -5,17 +5,7 @@ import { usePathname } from 'next/navigation';
 
 import { Navbar, Nav } from 'react-bootstrap';
 
-import
-{
-    HomeRounded,
-    SchoolRounded,
-    WorkOffRounded,
-    Facebook,
-    Twitter,
-    LinkedIn,
-    GitHub,
-    Telegram
-} from '@mui/icons-material'
+import { HomeRounded, Telegram } from '@mui/icons-material'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
