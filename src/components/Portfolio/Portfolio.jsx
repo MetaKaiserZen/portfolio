@@ -23,6 +23,8 @@ import
     Typography
 } from '@mui/material';
 
+import ImageGallery from '@/components/ImageGallery/ImageGallery';
+
 import '@/components/Portfolio/Portfolio.css';
 
 import data from '@/utils/data';
@@ -88,11 +90,28 @@ const Portfolio = () =>
                     </>
                 </Grid2>
 
-                <Dialog open={projectDialog} onClose={() => setProjectDialog(false)} className="projectDialog" fullWidth>
-                    <DialogTitle onClose={() => setProjectDialog(false)}>{projectDialog.title}</DialogTitle>
-                    <img src={projectDialog.image} alt="" className="projectDialog_image" />
-                    <DialogContent>
-                        <Typography className="projectDialog_description">{projectDialog.description}</Typography>
+                <Dialog
+                    open={projectDialog}
+                    onClose={() => setProjectDialog(false)}
+                    className="projectDialog"
+                    maxWidth="lg"
+                    fullWidth
+                >
+                    <DialogTitle onClose={() => setProjectDialog(false)}>
+                        {projectDialog.title}
+                    </DialogTitle>
+                    <DialogContent style={{ height: '80vh' }}>
+
+                        {
+                            projectDialog.images &&
+                            (
+                                <ImageGallery images={projectDialog.images} />
+                            )
+                        }
+
+                        <Typography className="projectDialog_description">
+                            {projectDialog.description}
+                        </Typography>
                     </DialogContent>
                     <DialogActions className="projectDialog_actions">
 

@@ -156,6 +156,11 @@ export default
         {
             tag: 'React',
             image: 'https://img.freepik.com/vector-gratis/fondo-degradado-lineas-azules-dinamicas_23-2148995756.jpg',
+            images:
+            [
+                'https://img.freepik.com/vector-gratis/fondo-degradado-lineas-azules-dinamicas_23-2148995756.jpg',
+                'https://img.freepik.com/vector-gratis/fondo-degradado-lineas-azules-dinamicas_23-2148995756.jpg'
+            ],
             title: 'React Project 1',
             caption: 'A short description',
             description: 'This is my proyect description. Please fill it in.',
@@ -178,6 +183,11 @@ export default
         {
             tag: 'React',
             image: 'https://img.freepik.com/vector-gratis/fondo-degradado-lineas-azules-dinamicas_23-2148995756.jpg',
+            images:
+            [
+                'https://img.freepik.com/vector-gratis/fondo-degradado-lineas-azules-dinamicas_23-2148995756.jpg',
+                'https://img.freepik.com/vector-gratis/fondo-degradado-lineas-azules-dinamicas_23-2148995756.jpg'
+            ],
             title: 'React Project 2',
             caption: 'A short description',
             description: 'This is my proyect description. Please fill it in.',
@@ -200,6 +210,11 @@ export default
         {
             tag: 'Python',
             image: 'https://img.freepik.com/vector-gratis/fondo-degradado-lineas-azules-dinamicas_23-2148995756.jpg',
+            images:
+            [
+                'https://img.freepik.com/vector-gratis/fondo-degradado-lineas-azules-dinamicas_23-2148995756.jpg',
+                'https://img.freepik.com/vector-gratis/fondo-degradado-lineas-azules-dinamicas_23-2148995756.jpg'
+            ],
             title: 'Python Project 1',
             caption: 'A short description',
             description: 'This is my proyect description. Please fill it in.',
@@ -222,6 +237,11 @@ export default
         {
             tag: 'Java',
             image: 'https://img.freepik.com/vector-gratis/fondo-degradado-lineas-azules-dinamicas_23-2148995756.jpg',
+            images:
+            [
+                'https://img.freepik.com/vector-gratis/fondo-degradado-lineas-azules-dinamicas_23-2148995756.jpg',
+                'https://img.freepik.com/vector-gratis/fondo-degradado-lineas-azules-dinamicas_23-2148995756.jpg'
+            ],
             title: 'Java Project 1',
             caption: 'A short description',
             description: 'This is my proyect description. Please fill it in.',
