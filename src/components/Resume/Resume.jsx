@@ -31,7 +31,7 @@ const Resume = () =>
             <Grid2 container className="section pb_45 pt_45">
                 <Grid2 className="section_title mb_30">
                     <span></span>
-                    <h6 className="section_title_text">About Me</h6>
+                    <h6 className="section_title_text">Sobre mí</h6>
                 </Grid2>
                 <Grid2 size={12}>
                     <Typography variant="body2" className="aboutme_text">{data.about}</Typography>
@@ -42,14 +42,14 @@ const Resume = () =>
             <Grid2 container className="section pb_45">
                 <Grid2 className="section_title mb_30">
                     <span></span>
-                    <h6 className="section_title_text">Resume</h6>
+                    <h6 className="section_title_text">Resumen</h6>
                 </Grid2>
 
                 <>
                     <Grid2 container className="resume_timeline">
                         {/* Experiences */}
                         <Grid2 size={{ sm: 12, md: 6 }}>
-                            <CustomTimeline title="Work Experience" icon={<Work />}>
+                            <CustomTimeline title="Experiencia Profesional" icon={<Work />}>
 
                                 {
                                     data.experiences.map((experience, index) =>
@@ -70,7 +70,7 @@ const Resume = () =>
 
                         {/* Education */}
                         <Grid2 size={{ sm: 12, md: 6 }}>
-                            <CustomTimeline title="Education" icon={<School />}>
+                            <CustomTimeline title="Educación" icon={<School />}>
 
                                 {
                                     data.education.map((education, index) =>
@@ -96,7 +96,7 @@ const Resume = () =>
             <Grid2 container className="section pb_45">
                 <Grid2 className="section_title mb_30">
                     <span></span>
-                    <h6 className="section_title_text">My Services</h6>
+                    <h6 className="section_title_text">Mis Servicios</h6>
                 </Grid2>
 
                 <>
@@ -120,13 +120,13 @@ const Resume = () =>
             </Grid2>
 
             {/* Skills */}
-            <Grid2 justifyContent="space-around" className="section graybg pb_45 p_50">
-                <Grid2 container spacing={3}>
+            <Grid2 className="section graybg pb_45 p_50">
+                <Grid2 container spacing={3} justifyContent="center">
 
                     {
                         data.skills.map((skill, index) =>
                         (
-                            <Grid2 key={index} size={{ xs: 12, sm: 6, lg: 3 }}>
+                            <Grid2 key={index} size={{ xs: 12, sm: 6, lg: 4 }}>
                                 <Paper elevation={0} className="skill">
                                     <Typography variant="h6" className="skill_title">
                                         {skill.title}

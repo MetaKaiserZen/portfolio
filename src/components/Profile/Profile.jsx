@@ -51,26 +51,28 @@ const Profile = () =>
             </div>
 
             <figure className='profile_image'>
-                <img src="/storage/resources/image.jpg" alt="" />
+                <img src="/storage/resources/profile-image.jpg" alt="" />
             </figure>
 
             <div className="profile_information">
                 <CustomTimeline icon={<PersonOutlineIcon />}>
-                    <CustomTimelineItem title="Name" text={data.name} />
-                    <CustomTimelineItem title="Title" text={data.title} />
-                    <CustomTimelineItem title="Email" text={data.email} />
+                    <CustomTimelineItem title="Nombre" text={data.name} />
+                    <CustomTimelineItem title="Cumpleaños" text={data.birthday} />
+                    <CustomTimelineItem title="Trabajo" text={data.title} />
+
+                    {/* { data.email && <CustomTimelineItem title="Correo" text={data.email} /> } */}
 
                     {
                         Object.keys(data.socials).map((key, index) =>
                         (
-                            <CustomTimelineItem key={index} title={key} text={data.socials[key].text} link={data.socials[key].link} />
+                            data.socials[key].text && <CustomTimelineItem key={index} title={key} text={data.socials[key].text} link={data.socials[key].link} />
                         ))
                     }
 
                 </CustomTimeline>
 
                 <div className="button_container">
-                    <CustomButton text="Download Cv" icon={<GetAppIcon />} />
+                    <CustomButton text="Descargar Cv" icon={<GetAppIcon />} download />
                 </div>
             </div>
         </div>

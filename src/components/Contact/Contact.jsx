@@ -25,23 +25,23 @@ const Contact = () =>
                     <Grid2 container>
                         <Grid2 className="section_title mb_30">
                             <span></span>
-                            <h6 className="section_title_text">Contact Form</h6>
+                            <h6 className="section_title_text">Formulario de Contacto</h6>
                         </Grid2>
                     </Grid2>
 
                     <>
                         <Grid2 container spacing={3}>
                             <Grid2 size={{ xs: 12, lg: 6 }}>
-                                <TextField fullWidth name="name" label="Name" variant="standard" autoComplete="off" />
+                                <TextField fullWidth name="name" label="Nombre" variant="standard" autoComplete="off" />
                             </Grid2>
                             <Grid2 size={{ xs: 12, lg: 6 }}>
-                                <TextField fullWidth name="email" label="E-mail" variant="standard" autoComplete="off" />
+                                <TextField fullWidth name="email" label="Correo" variant="standard" autoComplete="off" />
                             </Grid2>
                             <Grid2 size={12}>
-                                <TextField fullWidth name="message" label="Message" multiline rows={4} variant="standard" autoComplete="off" />
+                                <TextField fullWidth name="message" label="Mensaje" multiline rows={4} variant="standard" autoComplete="off" />
                             </Grid2>
                             <Grid2 size={12}>
-                                <CustomButton text="Submit" />
+                                <CustomButton text="Enviar" />
                             </Grid2>
                         </Grid2>
                     </>
@@ -52,7 +52,7 @@ const Contact = () =>
                     <Grid2 container>
                         <Grid2 className="section_title mb_30">
                             <span></span>
-                            <h6 className="section_title_text">Contact Information</h6>
+                            <h6 className="section_title_text">Información de Contacto</h6>
                         </Grid2>
                     </Grid2>
 
@@ -60,17 +60,22 @@ const Contact = () =>
                         <Grid2 container>
                             <Grid2 size={12}>
                                 <Typography className="contactInfo_item">
-                                    <span>Address:</span>{' '}{data.address}
+                                    <span>Dirección:</span>{' '}{data.address}
                                 </Typography>
                             </Grid2>
                             <Grid2 size={12}>
                                 <Typography className="contactInfo_item">
-                                    <span>Phone:</span>{' '}{data.phone}
+                                    <span>Teléfono:</span>{' '}{data.phone}
                                 </Typography>
                             </Grid2>
                             <Grid2 size={12}>
                                 <Typography className="contactInfo_item">
-                                    <span>Email:</span>{' '}{data.email}
+                                    <span>Trabajo:</span>{' '}{data.title}
+                                </Typography>
+                            </Grid2>
+                            <Grid2 size={12}>
+                                <Typography className="contactInfo_item">
+                                    <span>Correo:</span>{' '}{data.email}
                                 </Typography>
                             </Grid2>
                         </Grid2>
@@ -82,9 +87,12 @@ const Contact = () =>
                             {
                                 Object.keys(data.socials).map((key, index) =>
                                 (
-                                    <Grid2 key={index} className="contactInfo_social">
-                                        <a href={data.socials[key].link}>{data.socials[key].icon}</a>
-                                    </Grid2>
+                                    data.socials[key].text &&
+                                    (
+                                        <Grid2 key={index} className="contactInfo_social">
+                                            <a href={data.socials[key].link}>{data.socials[key].icon}</a>
+                                        </Grid2>
+                                    )
                                 ))
                             }
 

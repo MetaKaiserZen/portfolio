@@ -18,6 +18,7 @@
 .resume_timeline .timeline_content .timeline_description
 {
     color: #333;
+    white-space: pre-line !important;
 }
 
 .resume_timeline .timeline_content .timeline_description

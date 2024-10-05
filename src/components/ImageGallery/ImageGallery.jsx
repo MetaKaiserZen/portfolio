@@ -9,8 +9,8 @@ const ImageGallery = (props) =>
     const imageList = props?.images?.map((image) =>
     {
         return {
-            original: image,
-            thumbnail: image
+            original: `/storage/resources/portafolio/${image}`,
+            thumbnail: `/storage/resources/portafolio/${image}`
         }
     });
 

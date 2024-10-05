@@ -9,7 +9,7 @@
 
 .header .header_link
 {
-    font-weight: 600;
+    font-weight: 700;
     color: #333 !important;
 }
 
@@ -20,7 +20,7 @@
 
 .header .header_link_active
 {
-    font-weight: 600;
+    font-weight: 700;
     color: var(--main-color) !important;
 }
 

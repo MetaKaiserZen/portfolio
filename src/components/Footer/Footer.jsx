@@ -13,9 +13,9 @@ const Footer = () =>
             </div>
             <div className="footer_right">
                 <Typography className="footer_copyright">
-                    Designed and Developed by <a href="https://www.linkedin.com" target="_blank">Salman Fazal</a>
+                    Diseñado y desarrollado por <a href="https://www.linkedin.com/in/eduardo-montenegro-sep%C3%BAlveda" target="_blank">Eduardo Montenegro Sepúlveda</a>
                     <br />
-                    Clone idea from <a href="https://themeforest.net/user/tavonline" target="_blank">Tavonline</a>
+                    Créditos a <a href="https://themeforest.net/user/tavonline" target="_blank">Tavonline</a>
                 </Typography>
             </div>
         </div>
