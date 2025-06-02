@@ -51,7 +51,7 @@ const Profile = () =>
             </div>
 
             <figure className='profile_image'>
-                <img src="/storage/resources/profile-image.jpg" alt="" />
+                <img src="/storage/resources/profile-image.png" alt="profile-image" />
             </figure>
 
             <div className="profile_information">

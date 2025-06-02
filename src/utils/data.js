@@ -18,7 +18,7 @@ export default
 
     birthday: '24 de Agosto de 1990',
     email: 'contacto@correo.cl',
-    address: 'Avenida Principal 123',
+    address: 'Avenida Principal #123',
     phone: '+56 9 1234 5678',
 
     socials:
@@ -54,14 +54,24 @@ export default
     experiences:
     [
         {
-            title: 'Instituto Profesional AIEP',
-            date: '2018 y 2019',
-            description: '- Instalación de Sistemas Operativos (Windows 7 y Windows 10) y clonación de equipos (Acronis).\n- Preparación de equipos del personal administrativo con software corporativos.\n- Instalación y configuración de Office 2016 Plus y Office 365.\n- Configuración de direcciones IP estáticas.\n- Subir equipos al dominio corporativo con Active Directory.\n- Configuración de navegadores para la habilitación de páginas corporativas.\n- Realizar planillas de inventario Activos Fijos.\n- Optimización en el rendimiento de los equipos.\n- Realizar respaldo de información de archivos y correos (PST).\n- Creación de carpetas compartidas con los atributos solicitados (Lectura, Escritura y Control Total).\n- Conocimiento de SLA (Aranda Service Desk).\n- Configuración de proyectores por VGA y por red.\n- Realizar congelación de equipos (Deep Freeze).'
+            title: 'Ideas Digitales',
+            date: '2025',
+            description: '- Construcción de aplicaciones utilizando los Frameworks definidos por la compañía.\n- Colaboración en el diseño e implementación de los procesos a construir.\n- Creación y documentación de APIs RESTful seguras y eficientes.\n- Mantención de código según los estándares de calidad y mejores prácticas.\n- Implementación de medidas de seguridad en el Backend para proteger datos sensibles.\n- Participación de análisis y pruebas de vulnerabilidades en el código.\n- Participación en revisiones de código y optimización de procesos.'
+        },
+        {
+            title: 'Denergía',
+            date: '2024',
+            description: '- Desarrollo de portales informativos del rubro del acero utilizando el Framework Next.js.\n- Automatización de tareas e integración de cambios de código de forma continua mediante CI/CD.'
         },
         {
             title: 'Tranvial',
             date: '2020, 2021, 2022 y 2023',
-            description: '- Desarrollo y mantención de sitios web.\n- Formular las especificaciones necesarias para la elaboración de informes de estudios preliminares y de factibilidad para la adquisición de software y hardware y para el desarrollo de nuevos sistemas informáticos.\n- Brindar asesoramiento y monitoreo en casos de problemas técnicos de equipamiento e implementación de sistemas informáticos.\n- Coordinar y asesorar la instalación de servicios informáticos complementarios, tales como redes, correo electrónico e Internet.'
+            description: '- Desarrollo y mantención de sitios web utilizando el Framework Laravel, utilizando Eloquent ORM, consola de comandos Artisan y plantillas Blade para el desarrollo de sitios web a la medida.\n- Formulación de las especificaciones necesarias para la elaboración de informes de estudios preliminares y de factibilidad para la adquisición de software y hardware y para el desarrollo de nuevos sistemas informáticos.\n- Asesoramiento y monitoreo en casos de problemas técnicos de equipamiento e implementación de sistemas informáticos.\n- Coordinación y asesoramiento de la instalación de servicios informáticos complementarios, tales como redes, correo electrónico e Internet.'
+        },
+        {
+            title: 'Instituto Profesional AIEP',
+            date: '2018 y 2019',
+            description: '- Instalación de Sistemas Operativos (Windows 7 y Windows 10) y clonación de equipos (Acronis).\n- Preparación de equipos del personal administrativo con software corporativo.\n- Instalación y configuración de Office 2016 Plus y Office 365.\n- Configuración de direcciones IP estáticas.\n- Subir equipos al dominio corporativo con Active Directory.\n- Configuración de navegadores para la habilitación de páginas corporativas.\n- Realizar planillas de inventario Activos Fijos.\n- Optimización en el rendimiento de los equipos.\n- Realizar respaldo de información de archivos y correos (PST).\n- Creación de carpetas compartidas con los atributos solicitados (Lectura, Escritura y Control Total).\n- Conocimiento de SLA (Aranda Service Desk).\n- Configuración de proyectores por VGA y por red.\n- Realizar congelación de equipos (Deep Freeze).'
         }
     ],
 
