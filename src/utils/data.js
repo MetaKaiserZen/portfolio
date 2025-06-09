@@ -66,12 +66,12 @@ export default
         {
             title: 'Tranvial',
             date: '2020, 2021, 2022 y 2023',
-            description: '- Desarrollo y mantención de sitios web utilizando el Framework Laravel, utilizando Eloquent ORM, consola de comandos Artisan y plantillas Blade para el desarrollo de sitios web a la medida.\n- Formulación de las especificaciones necesarias para la elaboración de informes de estudios preliminares y de factibilidad para la adquisición de software y hardware y para el desarrollo de nuevos sistemas informáticos.\n- Asesoramiento y monitoreo en casos de problemas técnicos de equipamiento e implementación de sistemas informáticos.\n- Coordinación y asesoramiento de la instalación de servicios informáticos complementarios, tales como redes, correo electrónico e Internet.'
+            description: '- Desarrollo y mantención de sitios web utilizando el Framework Laravel, utilizando Eloquent ORM, consola de comandos Artisan y plantillas Blade para el desarrollo de sitios web a la medida.\n- Formulación de las especificaciones necesarias para la elaboración de informes de estudios preliminares y de factibilidad para la adquisición de software y hardware y para el desarrollo de nuevos sistemas informáticos.'
         },
         {
             title: 'Instituto Profesional AIEP',
             date: '2018 y 2019',
-            description: '- Instalación de Sistemas Operativos (Windows 7 y Windows 10) y clonación de equipos (Acronis).\n- Preparación de equipos del personal administrativo con software corporativo.\n- Instalación y configuración de Office 2016 Plus y Office 365.\n- Configuración de direcciones IP estáticas.\n- Subir equipos al dominio corporativo con Active Directory.\n- Configuración de navegadores para la habilitación de páginas corporativas.\n- Realizar planillas de inventario Activos Fijos.\n- Optimización en el rendimiento de los equipos.\n- Realizar respaldo de información de archivos y correos (PST).\n- Creación de carpetas compartidas con los atributos solicitados (Lectura, Escritura y Control Total).\n- Conocimiento de SLA (Aranda Service Desk).\n- Configuración de proyectores por VGA y por red.\n- Realizar congelación de equipos (Deep Freeze).'
+            description: '- Instalación de Sistemas Operativos.\n- Preparación de equipos del personal administrativo con software corporativo.\n- Instalación y configuración de Office 2016 Plus y Office 365.\n- Realizar planillas de inventario Activos Fijos.\n- Optimización en el rendimiento de los equipos.'
         }
     ],
 
@@ -155,6 +155,7 @@ export default
             [
                 'Microsoft SQL Server',
                 'MySQL',
+                'PostgreSQL',
                 'MongoDB'
             ]
         },
@@ -318,6 +319,96 @@ export default
                 },
                 {
                     link: '',
+                    icon: <Language />
+                }
+            ]
+        },
+        {
+            tag: 'Next.js',
+            image: 'heysi.png',
+            images:
+            [
+                'heysi-1.png',
+                'heysi-2.png',
+                'heysi-3.png',
+                'heysi-4.png',
+                'heysi-5.png'
+            ],
+            title: 'Heysi',
+            caption: 'Next.js / Material UI',
+            description: 'Portal informativo realizado en Next.js.',
+            links:
+            [
+                {
+                    link: '',
+                    icon: <YouTube />
+                },
+                {
+                    link: '',
+                    icon: <GitHub />
+                },
+                {
+                    link: 'https://heysi-three.vercel.app',
+                    icon: <Language />
+                }
+            ]
+        },
+        {
+            tag: 'Next.js',
+            image: 'ultralam.png',
+            images:
+            [
+                'ultralam-1.png',
+                'ultralam-2.png',
+                'ultralam-3.png',
+                'ultralam-4.png',
+                'ultralam-5.png'
+            ],
+            title: 'Ultralam',
+            caption: 'Next.js / Material UI',
+            description: 'Portal informativo realizado en Next.js.',
+            links:
+            [
+                {
+                    link: '',
+                    icon: <YouTube />
+                },
+                {
+                    link: '',
+                    icon: <GitHub />
+                },
+                {
+                    link: 'https://ultralam.vercel.app',
+                    icon: <Language />
+                }
+            ]
+        },
+        {
+            tag: 'Next.js',
+            image: 'barracabym.png',
+            images:
+            [
+                'barracabym-1.png',
+                'barracabym-2.png',
+                'barracabym-3.png',
+                'barracabym-4.png',
+                'barracabym-5.png'
+            ],
+            title: 'Barraca de Fierros B&M',
+            caption: 'Next.js / Material UI',
+            description: 'Portal informativo realizado en Next.js.',
+            links:
+            [
+                {
+                    link: '',
+                    icon: <YouTube />
+                },
+                {
+                    link: '',
+                    icon: <GitHub />
+                },
+                {
+                    link: 'https://barracabym.vercel.app',
                     icon: <Language />
                 }
             ]
